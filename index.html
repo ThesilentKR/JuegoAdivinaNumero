@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina el numero</title>
+  <script src="Metodos.js" async></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="Information">
+    <h1>Juego de adivina el numero</h1>
+    <div class="Instrucciones_info">
+      <h2>Instrucciones</h2>
+      <ul>
+        <li>Seleccione un numero entre 1 y 100</li>
+        <li>Dispondra de 10 intentos</li>
+        <li>Se le mostrara si el numero dado es mayor o menor al numero dado</li>
+        <li>Se seleccionara un numero aleatorio de entre 1 y 100</li>
+      </ul>
+    </div>
+  </div>
+  <div class="form">
+    <label for="guessField">Ingresa el numero a adivinar: </label>
+    <input type="number" min="1" max="100" required id="guessField" class="guessField">
+    <input type="submit" value="Comprobar" class="guessSubmit">
+  </div>
+
+  <div class="resultParas">
+    <p class="guesses"></p>
+    <p class="lastResult"></p>
+    <p class="lowOrHi"></p>
+  </div>
+</body>
+</html>
